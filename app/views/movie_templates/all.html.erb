@@ -18,7 +18,7 @@
     <td><%= movie.title %></td>
     <td><%= movie.year %></td>
     <td><%= Director.find(movie.director_id).name %></td>
-    <td><a href="movies/<%= movie.id %>">Show details</a></td>
+    <td><a href="/movies/<%= movie.id %>">Show details</a></td>
   </tr>
   <% end %>
 </tbody></table>
