@@ -7,8 +7,7 @@ class DirectorController < ApplicationController
   def selected
     @director_id = params.fetch("director_id")
     @director = Director.all.where( {:id => @director_id} )[0]
-    @director_name = @director.name
-
+    
     render( {:template => "/director_templates/selected"})
   end
 
