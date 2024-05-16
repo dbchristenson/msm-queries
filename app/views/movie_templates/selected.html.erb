@@ -20,7 +20,7 @@
   <dd><img src="<%= @movie.image %>" alt="" style="width:250px;"></dd>
 
   <dt>Director</dt>
-  <dd><%= @director.name %></dd>
+  <dd><%= Director.find(@movie.director_id).name %></dd>
 
   <dt>Created at</dt>
   <dd><%= @movie.created_at %></dd>
